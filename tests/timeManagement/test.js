@@ -39,7 +39,7 @@ describe("Time Management", function () {
         });
 
         it("should return a non empty token on success", function () {
-            expect(response.body.data.token).to.be.not.empty;
+            expect(response.body.data.token).to.not.be.empty;
         });
 
         it("should return a string token on success", function () {
@@ -57,11 +57,13 @@ describe("Time Management", function () {
                 })
                     .then(function (apiResponse) {
                         userId = apiResponse.body.data[0]._id;
+
+                        response = apiResponse;
                     });
             });
 
             it("Should create a user with role user", function () {
-                // expect(response.body.data).to.be.json;
+                expect(response.body.data[0].role).to.equal("user");
             })
         });
     });
@@ -95,7 +97,7 @@ describe("Time Management", function () {
             });
 
             it("Should have no errors", function () {
-                expect(response.body.data.errors).to.be.an("array").that.is.empty;
+                expect(response.body.data.errors).empty;
             });
 
         });

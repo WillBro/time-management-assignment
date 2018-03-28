@@ -1,0 +1,25 @@
+{
+  "name": "time-management-assignment",
+  "version": "1.0.0",
+  "description": "End-to-End testing for nodejs Time Management Application",
+  "author": {
+    "name": "William Brown"
+  },
+  "bin": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/WillBro/time-management-assignment.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "mocha tests/timeManagement --reporter mochawesome --reporter-options enableCode=false",
+    "lint": "eslint ./tests --max-warnings 0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chakram": "^1.5.0",
+    "mocha": "^5.0.5",
+    "mochawesome": "^3.0.2",
+    "randomstring": "^1.1.5"
+  }
+}

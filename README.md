@@ -8,44 +8,30 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* Nodejs
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Install NPM dependencies
 
 ```
-Give the example
+npm install
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+npm start
 ```
 
 ## Built With
 
-* [Docker](https://www.docker.com/) - Container Provisioning
 * [nodejs](https://nodejs.org/en/) - V8 Javascript runtime
-* [Nightwatchjs](http://nightwatchjs.org) - Nodejs end-to-end testing solution
+* [Chakram](http://dareid.github.io/chakram) - REST API testing framework
 * [Mocha](https://mochajs.org/) - Mocha Nodejs  test framework
 * [Chai](http://www.chaijs.com/) - Chai Assertion Library
-* [Cucumberjs](https://github.com/cucumber/cucumber-js) - BDD test cases in plain English
 
 ## Contributing
 
@@ -71,6 +57,6 @@ As this project is for an internal, non Open Source project, there is no applica
 
 ## Acknowledgments
 
-* [https://scotch.io](scotch.io) - For their awesome Javascript articles
-* [https://github.com/ChrisZie](ChrisZie) - For his nightwatch boilerplate
+* [https://github.com/dareid](Daniel Reid) - Developer of Chakram
+* [https://scotch.io](scotch.io) - For their awesome Javascript Test articles
 * [https://blog.getgauge.io](Gauge) - Blogged thoughts from ThoughtWorks the makers of Selenium

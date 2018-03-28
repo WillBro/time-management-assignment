@@ -1,5 +1,4 @@
 const chakram = require('chakram');
-const addContext = require('mochawesome/addContext');
 const randomstring = require("randomstring");
 const expect = chakram.expect;
 
@@ -30,8 +29,6 @@ describe("Time Management", function () {
                 .then(function (apiResponse) {
                     response = apiResponse;
                     token = apiResponse.body.data.token;
-
-                    console.log("Response Body %j", apiResponse.body)
                 });
         });
 
@@ -62,8 +59,6 @@ describe("Time Management", function () {
                 })
                     .then(function (apiResponse) {
                         userId = apiResponse.body.data[0]._id;
-
-                        console.log(apiResponse);
                     });
             });
 
@@ -102,7 +97,7 @@ describe("Time Management", function () {
             });
 
             it("Should have no errors", function () {
-                expect(response.body.data.errors).to.be.empty.array;
+                expect(response.body.data.errors).to.be.an("array").that.is.empty;
             });
 
         });
@@ -137,7 +132,7 @@ describe("Time Management", function () {
         describe("Filter Tasks", function () {
             var response;
 
-            before("Filter tasks by user", function () {
+            before("Filter tasks by current user", function () {
 
                 return chakram
                     .get("http://vcosta.com.br:3000/api/v1/task?user=" + userId, {
@@ -147,13 +142,15 @@ describe("Time Management", function () {
                     })
                     .then(function (apiResponse) {
                         response = apiResponse;
-
-                        console.log(response.body.data);
                     });
             });
 
+            it("Should return 200 on success", function () {
+                expect(response).to.have.status(200);
+            });
+
             it("Should return tasks as an array", function () {
-                expect(response.body.data).that.is.an.array;
+                expect(response.body.data).to.be.an('array');
             });
 
             it("Should return two tasks", function () {

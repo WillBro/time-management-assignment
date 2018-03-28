@@ -43,6 +43,9 @@ Give an example
 * [Docker](https://www.docker.com/) - Container Provisioning
 * [nodejs](https://nodejs.org/en/) - V8 Javascript runtime
 * [Nightwatchjs](http://nightwatchjs.org) - Nodejs end-to-end testing solution
+* [Mocha](https://mochajs.org/) - Mocha Nodejs  test framework
+* [Chai](http://www.chaijs.com/) - Chai Assertion Library
+* [Cucumberjs](https://github.com/cucumber/cucumber-js) - BDD test cases in plain English
 
 ## Contributing
 
@@ -52,11 +55,15 @@ Please read [CONTRIBUTING.md](https://github.com/WillBro/time-management-assignm
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/WillBro/time-management-assignment/tags).
 
+## Future Considerations
+
+* [SwaggerJs](https://github.com/swagger-api/swagger-js) - Swagger JS for self documenting REST API definitions
+
 ## Authors
 
-* **William Bornw** - *Initial work* - [WillBro](https://github.com/WillBro)
+* **William Brown** - *Initial work* - [WillBro](https://github.com/WillBro)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/WillBro/time-management-assignment/contributors) who participated in this project.
 
 ## License
 
@@ -65,3 +72,5 @@ As this project is for an internal, non Open Source project, there is no applica
 ## Acknowledgments
 
 * [https://scotch.io](scotch.io) - For their awesome Javascript articles
+* [https://github.com/ChrisZie](ChrisZie) - For his nightwatch boilerplate
+* [https://blog.getgauge.io](Gauge) - Blogged thoughts from ThoughtWorks the makers of Selenium

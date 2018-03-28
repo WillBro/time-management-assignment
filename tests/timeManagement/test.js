@@ -4,12 +4,10 @@ const expect = chakram.expect;
 
 describe("Time Management", function () {
     var token, userId;
-    var metPreferredWorkLoadProperty = "metPreferredWorkload";
     var preferredWorkLoad = 6;
 
     describe("User Creation", function () {
         var response, userToSignup, randomStringId, randomPassword;
-        var meta;
 
         before("Initialise a new User for the tests", function () {
             randomStringId = randomstring.generate(7);

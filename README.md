@@ -6,6 +6,12 @@ Nodejs based end-to-end test toolkit for Time Management System Assignment.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+* Test Plan can be found in ```doc/test-plan.md```
+* Test Cases can be found in ```doc/test-cases.odf```
+* Test Report can be found in ```doc/test-report.md```
+
+_Note that the ODF was generated using Open Office on Linux and is untested on Microsoft Excel for Windows_
+
 ### Prerequisites
 
 * Nodejs

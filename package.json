@@ -1,6 +1,6 @@
 {
   "name": "time-management-assignment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "End-to-End testing for nodejs Time Management Application",
   "author": {
     "name": "William Brown"
